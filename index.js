@@ -3,6 +3,8 @@ var app = express();
 var gplay = require("google-play-scraper");
 var store = require("app-store-scraper");
 
+const port = process.env.PORT || 3000;
+
 app.get("/", function (request, response) {
   if (request.query.os === "android") {
     gplay
@@ -25,4 +27,4 @@ app.get("/", function (request, response) {
   }
 });
 
-app.listen(3000, () => console.log("Server is running..."));
+app.listen(port, () => console.log("Server is running..."));
