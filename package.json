@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "app-store-scraper": "^0.16.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "google-play-scraper": "^8.0.2"
   },
   "engines": {
